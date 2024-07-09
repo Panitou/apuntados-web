@@ -220,13 +220,6 @@ export default function Profile() {
             className="border p-3 rounded-lg"
             onChange={handleChange}
           />
-          <input
-            type="password"
-            placeholder="Contraseña"
-            onChange={handleChange}
-            id="password"
-            className="border p-3 rounded-lg"
-          />
           {/* Botón para actualizar datos */}
           <button
             disabled={loading}
