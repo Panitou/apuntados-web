@@ -74,24 +74,6 @@ export default function Listing() {
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* Componentes opcionales para compartir y mostrar mensajes */}
-          {/* <div className="fixed top-[13%] right-[3%] z-10 border rounded-full w-12 h-12 flex justify-center items-center bg-slate-100 cursor-pointer">
-            <FaShare
-              className="text-slate-500"
-              onClick={() => {
-                navigator.clipboard.writeText(window.location.href);
-                setCopied(true);
-                setTimeout(() => {
-                  setCopied(false);
-                }, 2000);
-              }}
-            />
-          </div>
-          {copied && (
-            <p className="fixed top-[23%] right-[5%] z-10 rounded-md bg-slate-100 p-2">
-              Link copied!
-            </p>
-          )} */}
         </div>
       )}
       {/* Muestra los detalles del apunte (nombre, curso, descripción, etc.) */}
@@ -104,7 +86,7 @@ export default function Listing() {
           </p>
           {/* Descripción del apunte */}
           <p className="text-white h-8 w-full bg-white rounded-lg flex flex-col items-center justify-center">
-            <span className="font-semibold text-[#09090B]">Description: </span>
+            <span className="font-semibold text-[#09090B]">Descripcion: </span>
           </p>
           <p className="text-white">{listing.description}</p>
           {/* Detalles adicionales como ciclo y precio */}
